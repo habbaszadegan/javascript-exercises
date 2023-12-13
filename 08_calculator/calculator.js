@@ -19,8 +19,13 @@ const power = function(num1, num2) {
 	return Math.pow(num1, num2);
 };
 
-const factorial = function() {
-	
+const factorial = function(n) {
+	if (n === 0) return 1;
+  let product = 1;
+  for (let i = n; i > 0; i--) {
+    product *= i;
+  }
+  return product;
 };
 
 // Do not edit below this line
