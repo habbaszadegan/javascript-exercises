@@ -12,11 +12,14 @@ const findTheOldest = function(array) {
             ageCompare = array[j].age;
         }
     }
+    let greatestAge;
     for (let k = 0; k < array.length; k++) {
         if (array[k].age === ageCompare) {
-            return array[k].name;
+            greatestAge = array[k].name;
         }
     }
+    console.log(greatestAge);
+    return greatestAge;
 };
 
 const people = [
